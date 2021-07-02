@@ -3,7 +3,7 @@ import video from "../data/video.js";
 import Header from "./Header"
 import LikeButton from "./LikeButton"
 import DislikeButton from "./DislikeButton"
-import HideComments from "./HideComments"
+import Toggle from "./HideComments"
 import CommentsList from "./CommentsList";
 
 function App() {
@@ -31,13 +31,7 @@ function App() {
       downvotes={video.downvotes}
       />
       <div>
-      <HideComments />
-      </div>
-      <div>
-        <CommentsList
-        user={video.user}
-        comments={video.comments}
-        />
+      <Toggle />
       </div>
     </div>
     

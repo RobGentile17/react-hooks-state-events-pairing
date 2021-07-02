@@ -1,6 +1,6 @@
 import React from "react"
 
-const CommentsList = ({user,comments }) => {
+const CommentsList = ({comments }) => {
   const CommentsArray = comments.map(commentName => {
     return (
       <div>
@@ -9,7 +9,7 @@ const CommentsList = ({user,comments }) => {
     </div>
   )})
   return (
-    <ul>{CommentsArray}</ul>
+    <li>{CommentsArray}</li>
   )
 }
 export default CommentsList
